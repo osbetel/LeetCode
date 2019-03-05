@@ -21,6 +21,7 @@ def isPowerOfThree(n):
     if n == 1: return True
     if n <= 0: return False
     else: return 4052555153018976267 % n == 0
+    # 3^40 = 4052555153018976267 less than word size barely
 
 print(isPowerOfThree(1/3))
 
@@ -35,4 +36,5 @@ print(isPowerOfThree(1/3))
 # for k in range(100):
 #     if 3 ** k >= sys.maxsize:
 #         print(3**(k-1))
+#         print(k)
 #         break
