@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3b44b2f4-1a31-49cd-a52a-e7698ab819e4" name="Default" comment="Rename of solutions to include the title in filename&#10;Addition of a few more problems">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lc228 - Summary Rnages.py" beforeDir="false" afterPath="$PROJECT_DIR$/lc228 - Summary Ranges.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lc326 - Power of Three.py" beforeDir="false" afterPath="$PROJECT_DIR$/lc326 - Power of Three.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lc42 - Trapping Rain Water.py" beforeDir="false" afterPath="$PROJECT_DIR$/lc42 - Trapping Rain Water.py" afterDir="false" />
-    </list>
+    <list default="true" id="3b44b2f4-1a31-49cd-a52a-e7698ab819e4" name="Default" comment="A few more leetcode problems..." />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,8 +130,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="2560" />
-    <option name="height" value="1440" />
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -306,10 +301,10 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.Sorting" />
-      <item itemvalue="Python.Search" />
-      <item itemvalue="Python.lc326 - Power of Three" />
       <item itemvalue="Python.LongestGraphPath" />
+      <item itemvalue="Python.Search" />
+      <item itemvalue="Python.Sorting" />
+      <item itemvalue="Python.lc326 - Power of Three" />
       <item itemvalue="Python.testing" />
     </list>
     <recent_temporary>
@@ -332,7 +327,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1533940702318</updated>
-      <workItem from="1551726702565" duration="2628000" />
+      <workItem from="1551726702565" duration="2672000" />
     </task>
     <task id="LOCAL-00001" summary="Rename of solutions to include the title in filename&#10;Addition of a few more problems">
       <created>1540792396275</created>
@@ -348,11 +343,18 @@
       <option name="project" value="LOCAL" />
       <updated>1540792755578</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="A few more leetcode problems...">
+      <created>1551750629598</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1551750629598</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2628000" />
+    <option name="totallyTimeSpent" value="2672000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -389,7 +391,7 @@
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="4" weight="0.26886418" />
       <window_info anchor="right" x="0" y="0" width="590" height="1240" id="Documentation" order="5" weight="0.24900715" />
-      <window_info active="true" anchor="right" x="3914" y="237" width="1151" height="1326" id="Run" order="6" sideWeight="0.4980143" visible="true" weight="0.3104435" />
+      <window_info anchor="right" x="3914" y="237" width="1151" height="1326" id="Run" order="6" sideWeight="0.4980143" weight="0.3104435" />
       <window_info anchor="right" id="Coverage" order="7" side_tool="true" />
     </layout>
     <layout-to-restore>
@@ -424,7 +426,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Rename of solutions to include the title in filename&#10;Addition of a few more problems" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rename of solutions to include the title in filename&#10;Addition of a few more problems" />
+    <MESSAGE value="A few more leetcode problems..." />
+    <option name="LAST_COMMIT_MESSAGE" value="A few more leetcode problems..." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/lc122.py" />
