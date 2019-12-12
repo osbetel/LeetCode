@@ -4,6 +4,7 @@
     <list default="true" id="3b44b2f4-1a31-49cd-a52a-e7698ab819e4" name="Default" comment="gfx-y.py represents stages of old (publically available) google foobar&#10;problems and my attempted solutions. Didn't make it to the end because&#10;I'm trash. Joy.&#10;&#10;Added other code for reference in search and sorting algos, and graph &#10;algos including djikstra and prim">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,7 +37,7 @@
     <SUITE FILE_PATH="coverage/LeetCode$lc22.coverage" NAME="lc22 Coverage Results" MODIFIED="1540458667906" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/LeetCode$lc200.coverage" NAME="lc200 Coverage Results" MODIFIED="1540263415136" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/LeetCode$lc160.coverage" NAME="lc160 Coverage Results" MODIFIED="1535010738519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/LeetCode$lc303__Range_Sum_Query__immutable_.coverage" NAME="lc303 -Range Sum Query (immutable) Coverage Results" MODIFIED="1553209837119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/LeetCode$lc303__Range_Sum_Query__immutable_.coverage" NAME="lc303 -Range Sum Query (immutable) Coverage Results" MODIFIED="1552898699661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/LeetCode$lc56.coverage" NAME="lc56 Coverage Results" MODIFIED="1540772837851" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/LeetCode$lc53.coverage" NAME="lc53 Coverage Results" MODIFIED="1535533649460" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/LeetCode$Search.coverage" NAME="Search Coverage Results" MODIFIED="1540796552023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -56,6 +57,28 @@
     <SUITE FILE_PATH="coverage/LeetCode$lc374.coverage" NAME="lc374 Coverage Results" MODIFIED="1540606949850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/LeetCode$lc50.coverage" NAME="lc50 Coverage Results" MODIFIED="1534968399351" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lc198 - House Robber.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="783">
+              <caret line="29" column="36" lean-forward="true" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lc303 -Range Sum Query (immutable).py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="621">
+              <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -66,7 +89,67 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1S9QRGhzrAvjTv8PEI9VvjvigIm" />
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/lc1.py" />
+        <option value="$PROJECT_DIR$/lc79.py" />
+        <option value="$PROJECT_DIR$/lc62.py" />
+        <option value="$PROJECT_DIR$/lc50.py" />
+        <option value="$PROJECT_DIR$/lc160.py" />
+        <option value="$PROJECT_DIR$/lc53.py" />
+        <option value="$PROJECT_DIR$/fileRenamer.py" />
+        <option value="$PROJECT_DIR$/lc3.py" />
+        <option value="$PROJECT_DIR$/lc200.py" />
+        <option value="$PROJECT_DIR$/lc17.py" />
+        <option value="$PROJECT_DIR$/lc4.py" />
+        <option value="$PROJECT_DIR$/lc20.py" />
+        <option value="$PROJECT_DIR$/lc22.py" />
+        <option value="$PROJECT_DIR$/lc23.py" />
+        <option value="$PROJECT_DIR$/lc66.py" />
+        <option value="$PROJECT_DIR$/lc155.py" />
+        <option value="$PROJECT_DIR$/lc231.py" />
+        <option value="$PROJECT_DIR$/lc257.py" />
+        <option value="$PROJECT_DIR$/lc326.py" />
+        <option value="$PROJECT_DIR$/lc345.py" />
+        <option value="$PROJECT_DIR$/lc374.py" />
+        <option value="$PROJECT_DIR$/lc389.py" />
+        <option value="$PROJECT_DIR$/lc400.py" />
+        <option value="$PROJECT_DIR$/lc415.py" />
+        <option value="$PROJECT_DIR$/lc401.py" />
+        <option value="$PROJECT_DIR$/lc409.py" />
+        <option value="$PROJECT_DIR$/lc31.py" />
+        <option value="$PROJECT_DIR$/lc54.py" />
+        <option value="$PROJECT_DIR$/lc133.py" />
+        <option value="$PROJECT_DIR$/lc228.py" />
+        <option value="$PROJECT_DIR$/lc56.py" />
+        <option value="$PROJECT_DIR$/timer.py" />
+        <option value="$PROJECT_DIR$/lc279.py" />
+        <option value="$PROJECT_DIR$/lc42.py" />
+        <option value="$PROJECT_DIR$/lc3 Longest Substring without Repeating Characters.py" />
+        <option value="$PROJECT_DIR$/lc4 - Median of Two Sorted Arrays.py" />
+        <option value="$PROJECT_DIR$/Search.py" />
+        <option value="$PROJECT_DIR$/Sorting.py" />
+        <option value="$PROJECT_DIR$/lc42 - Trapping Rain Water.py" />
+        <option value="$PROJECT_DIR$/lc326 - Power of Three.py" />
+        <option value="$PROJECT_DIR$/BinaryTree.py" />
+        <option value="$PROJECT_DIR$/Djikstra.py" />
+        <option value="$PROJECT_DIR$/LongestGraphPath.py" />
+        <option value="$PROJECT_DIR$/testing.py" />
+        <option value="$PROJECT_DIR$/sellingSpy.py" />
+        <option value="$PROJECT_DIR$/lc746 - Min Cost Climbing Stairs.py" />
+        <option value="$PROJECT_DIR$/lc70.py" />
+        <option value="$PROJECT_DIR$/lc198.py" />
+        <option value="$PROJECT_DIR$/lc70 - Climbing Stairs.py" />
+        <option value="$PROJECT_DIR$/lc198 - House Robber.py" />
+        <option value="$PROJECT_DIR$/lc303 -Range Sum Query (immutable).py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
       <profile-state>
@@ -84,156 +167,172 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
-    <option name="showLibraryContents" value="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="LeetCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Python.fanficDL">
-    <configuration name="fanficDL" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="LeetCode" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fanficDL.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="lc189 – Rotate Array" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="LeetCode" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lc189 – Rotate Array.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="lc771 – Jewels and Stones" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="LeetCode" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lc771 – Jewels and Stones.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="subset sum problem" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="LeetCode" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/subset sum problem.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="LeetCode" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
+  <component name="RunDashboard">
+    <option name="ruleStates">
       <list>
-        <item itemvalue="Python.fanficDL" />
-        <item itemvalue="Python.subset sum problem" />
-        <item itemvalue="Python.test" />
-      </list>
-    </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager" selected="Python.lc303 -Range Sum Query (immutable)">
+    <configuration name="lc198 - House Robber" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="LeetCode" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lc198 - House Robber.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="lc303 -Range Sum Query (immutable)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="LeetCode" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lc303 -Range Sum Query (immutable).py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="lc70 - Climbing Stairs" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="LeetCode" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lc70 - Climbing Stairs.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="lc746 - Min Cost Climbing Stairs" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="LeetCode" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lc746 - Min Cost Climbing Stairs.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="testing" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="LeetCode" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sellingSpy.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.testing" />
+      <item itemvalue="Python.lc746 - Min Cost Climbing Stairs" />
+      <item itemvalue="Python.lc70 - Climbing Stairs" />
+      <item itemvalue="Python.lc198 - House Robber" />
+      <item itemvalue="Python.lc303 -Range Sum Query (immutable)" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.lc303 -Range Sum Query (immutable)" />
+        <item itemvalue="Python.lc198 - House Robber" />
+        <item itemvalue="Python.lc70 - Climbing Stairs" />
+        <item itemvalue="Python.lc746 - Min Cost Climbing Stairs" />
+        <item itemvalue="Python.testing" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -248,27 +347,6 @@
       <workItem from="1551726702565" duration="2672000" />
       <workItem from="1552888844288" duration="1703000" />
       <workItem from="1552893506747" duration="5594000" />
-      <workItem from="1553209812097" duration="38000" />
-      <workItem from="1554336257285" duration="6000" />
-      <workItem from="1555461473785" duration="2680000" />
-      <workItem from="1555696736286" duration="10000" />
-      <workItem from="1560804077825" duration="53000" />
-      <workItem from="1570973322517" duration="1765000" />
-      <workItem from="1570996395191" duration="5000" />
-      <workItem from="1571102449212" duration="5798000" />
-      <workItem from="1571290200091" duration="8107000" />
-      <workItem from="1571613934031" duration="590000" />
-      <workItem from="1571614558754" duration="1418000" />
-      <workItem from="1571811987340" duration="182000" />
-      <workItem from="1572499660411" duration="267000" />
-      <workItem from="1572589646199" duration="228000" />
-      <workItem from="1572593887940" duration="20000" />
-      <workItem from="1572635080134" duration="79000" />
-      <workItem from="1572841441489" duration="853000" />
-      <workItem from="1572842357195" duration="57000" />
-      <workItem from="1572898581331" duration="3592000" />
-      <workItem from="1573701560841" duration="1815000" />
-      <workItem from="1575361824224" duration="1778000" />
     </task>
     <task id="LOCAL-00001" summary="Rename of solutions to include the title in filename&#10;Addition of a few more problems">
       <created>1540792396275</created>
@@ -301,21 +379,76 @@
     <option name="localTasksCounter" value="5" />
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="9969000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4996288" visible="true" weight="0.17235902" />
+      <window_info id="Structure" order="1" sideWeight="0.5003712" side_tool="true" weight="0.21644162" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="0" weight="0.32935917" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39900866" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.328879" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5019857" side_tool="true" weight="0.27868852" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" weight="0.32935917" />
+      <window_info anchor="bottom" id="Python Console" order="9" weight="0.3283767" />
+      <window_info anchor="bottom" x="-22" y="563" width="2518" height="442" id="Terminal" order="10" weight="0.32935917" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="SciView" order="4" weight="0.26886418" />
+      <window_info anchor="right" x="0" y="0" width="590" height="1240" id="Documentation" order="5" weight="0.24900715" />
+      <window_info active="true" anchor="right" x="3914" y="237" width="1151" height="1326" id="Run" order="6" sideWeight="0.4980143" visible="true" weight="0.3101668" />
+      <window_info anchor="right" id="Coverage" order="7" side_tool="true" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4996288" visible="true" weight="0.16441621" />
+      <window_info id="Structure" order="1" sideWeight="0.5003712" side_tool="true" weight="0.21644162" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="0" weight="0.32935917" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39900866" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.328879" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5019857" side_tool="true" weight="0.27868852" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" weight="0.32935917" />
+      <window_info anchor="bottom" id="Python Console" order="9" weight="0.328879" />
+      <window_info anchor="bottom" x="-22" y="563" width="2518" height="442" id="Terminal" order="10" weight="0.32935917" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="SciView" order="4" weight="0.26886418" />
+      <window_info anchor="right" x="0" y="0" width="590" height="1240" id="Documentation" order="5" weight="0.24900715" />
+      <window_info anchor="right" x="3914" y="237" width="1151" height="1326" id="Run" order="6" sideWeight="0.4980143" weight="0.31056395" />
+      <window_info anchor="right" id="Coverage" order="7" side_tool="true" />
+    </layout-to-restore>
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Rename of solutions to include the title in filename&#10;Addition of a few more problems" />
@@ -323,31 +456,157 @@
     <MESSAGE value="gfx-y.py represents stages of old (publically available) google foobar&#10;problems and my attempted solutions. Didn't make it to the end because&#10;I'm trash. Joy.&#10;&#10;Added other code for reference in search and sorting algos, and graph &#10;algos including djikstra and prim" />
     <option name="LAST_COMMIT_MESSAGE" value="gfx-y.py represents stages of old (publically available) google foobar&#10;problems and my attempted solutions. Didn't make it to the end because&#10;I'm trash. Joy.&#10;&#10;Added other code for reference in search and sorting algos, and graph &#10;algos including djikstra and prim" />
   </component>
-  <component name="WindowStateProjectService">
-    <state width="749" height="1318" key="GridCell.Tab.0.bottom" timestamp="1575410150581">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state width="749" height="1318" key="GridCell.Tab.0.bottom/2560.193.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1575410150581" />
-    <state width="749" height="1318" key="GridCell.Tab.0.center" timestamp="1575410150580">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state width="749" height="1318" key="GridCell.Tab.0.center/2560.193.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1575410150580" />
-    <state width="749" height="1318" key="GridCell.Tab.0.left" timestamp="1575410150579">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state width="749" height="1318" key="GridCell.Tab.0.left/2560.193.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1575410150579" />
-    <state width="749" height="1318" key="GridCell.Tab.0.right" timestamp="1575410150581">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state width="749" height="1318" key="GridCell.Tab.0.right/2560.193.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1575410150581" />
-    <state x="781" y="359" key="SettingsEditor" timestamp="1575362209257">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state x="781" y="359" key="SettingsEditor/2560.193.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1575362209257" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/LeetCode$test.coverage" NAME="test Coverage Results" MODIFIED="1573702161405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/LeetCode$fanficDL.coverage" NAME="fanficDL Coverage Results" MODIFIED="1575362343447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/LeetCode$subset_sum_problem.coverage" NAME="subset sum problem Coverage Results" MODIFIED="1573703328806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/lc160.py" />
+    <entry file="file://$PROJECT_DIR$/lc53.py" />
+    <entry file="file://$PROJECT_DIR$/fileRenamer.py" />
+    <entry file="file://$PROJECT_DIR$/lc3.py" />
+    <entry file="file://$PROJECT_DIR$/lc200.py" />
+    <entry file="file://$PROJECT_DIR$/lc17.py" />
+    <entry file="file://$PROJECT_DIR$/lc20.py" />
+    <entry file="file://$PROJECT_DIR$/lc22.py" />
+    <entry file="file://$PROJECT_DIR$/lc155.py" />
+    <entry file="file://$PROJECT_DIR$/lc66.py" />
+    <entry file="file://$PROJECT_DIR$/lc4.py" />
+    <entry file="file://$PROJECT_DIR$/lc257.py" />
+    <entry file="file://$PROJECT_DIR$/lc326.py" />
+    <entry file="file://$PROJECT_DIR$/lc231.py" />
+    <entry file="file://$PROJECT_DIR$/lc345.py" />
+    <entry file="file://$PROJECT_DIR$/lc23.py" />
+    <entry file="file://$PROJECT_DIR$/lc374.py" />
+    <entry file="file://$PROJECT_DIR$/lc389.py" />
+    <entry file="file://$PROJECT_DIR$/lc400.py" />
+    <entry file="file://$PROJECT_DIR$/lc409.py" />
+    <entry file="file://$PROJECT_DIR$/lc415.py" />
+    <entry file="file://$PROJECT_DIR$/lc31.py" />
+    <entry file="file://$PROJECT_DIR$/lc54.py" />
+    <entry file="file://$PROJECT_DIR$/lc133.py" />
+    <entry file="file://$PROJECT_DIR$/lc56.py" />
+    <entry file="file://$PROJECT_DIR$/lc228.py" />
+    <entry file="file://$PROJECT_DIR$/lc279.py" />
+    <entry file="file://$PROJECT_DIR$/lc401.py" />
+    <entry file="file://$PROJECT_DIR$/lc42.py" />
+    <entry file="file://$PROJECT_DIR$/timer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="14" lean-forward="true" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lc1.py" />
+    <entry file="file://$PROJECT_DIR$/lc3 Longest Substring without Repeating Characters.py" />
+    <entry file="file://$PROJECT_DIR$/lc42 - Trapping Rain Water.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="823">
+          <caret line="104" column="16" selection-start-line="104" selection-start-column="16" selection-end-line="104" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lc66 - Plus One.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lc62 - Unique Paths.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Search.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sorting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1254">
+          <caret line="82" column="19" selection-start-line="82" selection-start-column="19" selection-end-line="82" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BinaryTree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="843">
+          <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Djikstra.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="658">
+          <caret line="71" column="17" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lc133 - Clone Graph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="976">
+          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lc326 - Power of Three.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="21" column="27" lean-forward="true" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lc4 - Median of Two Sorted Arrays.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1218">
+          <caret line="118" column="30" selection-start-line="118" selection-start-column="30" selection-end-line="118" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lc279 - Perfect Squares.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lc257 - Binary Tree Paths.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LongestGraphPath.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lc160 -  Intersection of Two Linked Lists.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sellingSpy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lc746 - Min Cost Climbing Stairs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="35" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lc70 - Climbing Stairs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1232">
+          <caret line="80" column="2" selection-start-line="80" selection-start-column="2" selection-end-line="80" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lc198 - House Robber.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="783">
+          <caret line="29" column="36" lean-forward="true" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lc303 -Range Sum Query (immutable).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
