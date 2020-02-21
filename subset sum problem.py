@@ -41,6 +41,29 @@ def gen_powerset(elements):
     return ps
 
 
+def recursive_gen_powerset(elements, powerset):
+    # how can we recursively generate the powerset from a list of elements?
+    # we will construct new subsets and add them to the powerset
+    # suppose we have a list of 3 elements, [1,2,3]
+    # first we start with the empty set [], then we add all sets of size 1, [1], [2], [3],
+    # then sets of size 2, [1, 2], [1, 3], [2, 3],
+    # then sets of size 3, [1,2,3]
+    # we can see then that this problem has an optimal substructure. That is, starting from sets of size 3,
+    # [1,2,3], we can actually construct all sets of size 2, and all sets of size 1, and the empty set,
+    # by eliminating elements.
+    # this is actually known as the backtracking method (almost, need to eliminate redundant recursive branches)
+
+    if elements not in powerset:
+        powerset.append(elements)
+
+    for i in range(len(elements)):
+        subset = elements[:i] + elements[i+1:]
+        if subset not in powerset:
+            powerset.append(subset)
+        recursive_gen_powerset(subset, powerset)
+    return powerset
+
+
 def does_powerset_contain_target_sum(ps, target):
 
     if target <= 0:
@@ -60,15 +83,18 @@ def does_powerset_contain_target_sum(ps, target):
 
 
 
-a = [1,2,2,3,5,1,6,2,3,4,5,76,8,523,2,3,5,3,5,2,3,6,6,23,45,4,5,23,5,35,7,45,34,5,34,56,34,5,345,34,5,34,5]
-# a = [2,3,4,5,6,7,8,2,3,5,2,9,6,9,1,3,3,5,6,3]
-
+# a = [1,2,2,3,5,1,6,2,3,4,5,76,8,523,2,3,5,3,5,2,3,6,6,23,45,4,5,23,5,35,7,45,34,5,34,56,34,5,345,34,5,34,5]
+a = [2,3,4,5,6,7,8,9,10,11]
 import time
 start = time.process_time()
 
 # ps = gen_powerset(a)
-# print(does_powerset_contain_target_sum(ps, 800))
-print(isSubsetSum(a, len(a), 1))
+# print(len(ps))
+rps = recursive_gen_powerset(a, [])
+print(len(rps))
+
+# print(does_powerset_contain_target_sum(ps, 1))
+# print(isSubsetSum(a, len(a), 1))
 
 end = time.process_time()
 print(end - start)
