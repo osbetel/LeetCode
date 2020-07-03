@@ -21,17 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3b44b2f4-1a31-49cd-a52a-e7698ab819e4" name="Default" comment="gfx-y.py represents stages of old (publically available) google foobar&#10;problems and my attempted solutions. Didn't make it to the end because&#10;I'm trash. Joy.&#10;&#10;Added other code for reference in search and sorting algos, and graph &#10;algos including djikstra and prim">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lc1047 – Remove All Adjacent Duplicates in String.py" beforeDir="false" afterPath="$PROJECT_DIR$/lc1047 - Remove All Adjacent Duplicates in String.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lc12 – Integer to Roman Numerals.py" beforeDir="false" afterPath="$PROJECT_DIR$/lc12 - Integer to Roman Numerals.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lc189 – Rotate Array.py" beforeDir="false" afterPath="$PROJECT_DIR$/lc189 - Rotate Array.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lc2 – Add Two Numbers.py" beforeDir="false" afterPath="$PROJECT_DIR$/lc2 - Add Two Numbers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lc50 - Pow(x,n).py" beforeDir="false" afterPath="$PROJECT_DIR$/lc50 - Pow(x,n).py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lc58 – Length of Last Word.py" beforeDir="false" afterPath="$PROJECT_DIR$/lc58 - Length of Last Word.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lc771 – Jewels and Stones.py" beforeDir="false" afterPath="$PROJECT_DIR$/lc771 - Jewels and Stones.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lc78 – Subsets.py" beforeDir="false" afterPath="$PROJECT_DIR$/lc78 - Subsets.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lc82 – Remove Duplicates from Sorted Linked List II.py" beforeDir="false" afterPath="$PROJECT_DIR$/lc82 - Remove Duplicates from Sorted Linked List II.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lc83 – Remove Duplicates from a Sorted Linked List.py" beforeDir="false" afterPath="$PROJECT_DIR$/lc83 - Remove Duplicates from a Sorted Linked List.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lc834 – Sum of Distances in a Tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/lc834 - Sum of Distances in a Tree.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
