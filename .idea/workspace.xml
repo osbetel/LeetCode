@@ -1,11 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="3b44b2f4-1a31-49cd-a52a-e7698ab819e4" name="Default" comment="gfx-y.py represents stages of old (publically available) google foobar&#10;problems and my attempted solutions. Didn't make it to the end because&#10;I'm trash. Joy.&#10;&#10;Added other code for reference in search and sorting algos, and graph &#10;algos including djikstra and prim">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lc23 - Merge k Sorted Lists.py" beforeDir="false" afterPath="$PROJECT_DIR$/lc23 - Merge k Sorted Lists.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lc4 - Median of Two Sorted Arrays.py" beforeDir="false" afterPath="$PROJECT_DIR$/lc4 - Median of Two Sorted Arrays.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/subset sum problem.py" beforeDir="false" afterPath="$PROJECT_DIR$/subset sum problem.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lc1047 – Remove All Adjacent Duplicates in String.py" beforeDir="false" afterPath="$PROJECT_DIR$/lc1047 - Remove All Adjacent Duplicates in String.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lc12 – Integer to Roman Numerals.py" beforeDir="false" afterPath="$PROJECT_DIR$/lc12 - Integer to Roman Numerals.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lc189 – Rotate Array.py" beforeDir="false" afterPath="$PROJECT_DIR$/lc189 - Rotate Array.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lc2 – Add Two Numbers.py" beforeDir="false" afterPath="$PROJECT_DIR$/lc2 - Add Two Numbers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lc50 - Pow(x,n).py" beforeDir="false" afterPath="$PROJECT_DIR$/lc50 - Pow(x,n).py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lc58 – Length of Last Word.py" beforeDir="false" afterPath="$PROJECT_DIR$/lc58 - Length of Last Word.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lc771 – Jewels and Stones.py" beforeDir="false" afterPath="$PROJECT_DIR$/lc771 - Jewels and Stones.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lc78 – Subsets.py" beforeDir="false" afterPath="$PROJECT_DIR$/lc78 - Subsets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lc82 – Remove Duplicates from Sorted Linked List II.py" beforeDir="false" afterPath="$PROJECT_DIR$/lc82 - Remove Duplicates from Sorted Linked List II.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lc83 – Remove Duplicates from a Sorted Linked List.py" beforeDir="false" afterPath="$PROJECT_DIR$/lc83 - Remove Duplicates from a Sorted Linked List.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lc834 – Sum of Distances in a Tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/lc834 - Sum of Distances in a Tree.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,10 +101,10 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -94,7 +120,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Optimal Application question">
+  <component name="RunManager" selected="Python.lc50 - Pow(x,n)">
     <configuration name="Optimal Application question" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -117,7 +143,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="lc1047 – Remove All Adjacent Duplicates in String" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="lc1047 - Remove All Adjacent Duplicates in String" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -130,7 +156,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lc1047 – Remove All Adjacent Duplicates in String.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lc1047 - Remove All Adjacent Duplicates in String.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -161,7 +187,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="lc4 - Median of Two Sorted Arrays" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="lc46 - Permutations" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -173,8 +199,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lc4 - Median of Two Sorted Arrays.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lc46 - Permutations.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -183,7 +208,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="lc82 – Remove Duplicates from Sorted Linked List II" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="lc50 - Pow(x,n)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -195,8 +220,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lc82 – Remove Duplicates from Sorted Linked List II.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lc50 - Pow(x,n).py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -207,25 +231,13 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.lc50 - Pow(x,n)" />
+        <item itemvalue="Python.lc46 - Permutations" />
         <item itemvalue="Python.Optimal Application question" />
         <item itemvalue="Python.lc23 - Merge k Sorted Lists" />
-        <item itemvalue="Python.lc1047 – Remove All Adjacent Duplicates in String" />
-        <item itemvalue="Python.lc4 - Median of Two Sorted Arrays" />
-        <item itemvalue="Python.lc82 – Remove Duplicates from Sorted Linked List II" />
+        <item itemvalue="Python.lc1047 - Remove All Adjacent Duplicates in String" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -311,13 +323,12 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Rename of solutions to include the title in filename&#10;Addition of a few more problems" />
@@ -326,48 +337,21 @@
     <option name="LAST_COMMIT_MESSAGE" value="gfx-y.py represents stages of old (publically available) google foobar&#10;problems and my attempted solutions. Didn't make it to the end because&#10;I'm trash. Joy.&#10;&#10;Added other code for reference in search and sorting algos, and graph &#10;algos including djikstra and prim" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="858" y="393" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1578786569633">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state width="1419" height="245" key="GridCell.Tab.0.bottom" timestamp="1593758682400">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="858" y="393" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/2560.193.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1578786569633" />
-    <state width="749" height="1318" key="GridCell.Tab.0.bottom" timestamp="1582276161688">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state width="1419" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1593758682400" />
+    <state width="1419" height="245" key="GridCell.Tab.0.center" timestamp="1593758682399">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="749" height="1318" key="GridCell.Tab.0.bottom/2560.193.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1582276161688" />
-    <state width="749" height="1318" key="GridCell.Tab.0.center" timestamp="1582276161687">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state width="1419" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1593758682399" />
+    <state width="1419" height="245" key="GridCell.Tab.0.left" timestamp="1593758682399">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="749" height="1318" key="GridCell.Tab.0.center/2560.193.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1582276161687" />
-    <state width="749" height="1318" key="GridCell.Tab.0.left" timestamp="1582276161686">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state width="1419" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1593758682399" />
+    <state width="1419" height="245" key="GridCell.Tab.0.right" timestamp="1593758682400">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="749" height="1318" key="GridCell.Tab.0.left/2560.193.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1582276161686" />
-    <state width="749" height="1318" key="GridCell.Tab.0.right" timestamp="1582276161687">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state width="749" height="1318" key="GridCell.Tab.0.right/2560.193.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1582276161687" />
-    <state x="781" y="359" key="SettingsEditor" timestamp="1578468468591">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state x="781" y="359" key="SettingsEditor/2560.193.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1578468468591" />
-    <state x="945" y="331" key="search.everywhere.popup" timestamp="1578387549965">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state x="945" y="331" key="search.everywhere.popup/2560.193.2560.1440/0.0.2560.1440@0.0.2560.1440" timestamp="1578387549965" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/LeetCode$unity_intern_coding_test.coverage" NAME="unity intern coding test Coverage Results" MODIFIED="1577832324499" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/LeetCode$test.coverage" NAME="test Coverage Results" MODIFIED="1573702161405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/LeetCode$lc78__Subsets.coverage" NAME="lc78 – Subsets Coverage Results" MODIFIED="1577760424079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/LeetCode$fanficDL.coverage" NAME="fanficDL Coverage Results" MODIFIED="1575362343447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/LeetCode$Optimal_Application_question.coverage" NAME="Optimal Application question Coverage Results" MODIFIED="1582275881933" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/LeetCode$lc4___Median_of_Two_Sorted_Arrays.coverage" NAME="lc4 - Median of Two Sorted Arrays Coverage Results" MODIFIED="1578469824316" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/LeetCode$lc83__Remove_Duplicates_from_a_Sorted_Linked_List.coverage" NAME="lc83 – Remove Duplicates from a Sorted Linked List Coverage Results" MODIFIED="1578438558300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/LeetCode$lc58__Length_of_Last_Word.coverage" NAME="lc58 – Length of Last Word Coverage Results" MODIFIED="1577781366113" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/LeetCode$lc23___Merge_k_Sorted_Lists.coverage" NAME="lc23 - Merge k Sorted Lists Coverage Results" MODIFIED="1578642954274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/LeetCode$lc82__Remove_Duplicates_from_Sorted_Linked_List_II.coverage" NAME="lc82 – Remove Duplicates from Sorted Linked List II Coverage Results" MODIFIED="1578460266827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/LeetCode$lc12__Integer_to_Roman_Numerals.coverage" NAME="lc12 – Integer to Roman Numerals Coverage Results" MODIFIED="1578437694829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/LeetCode$subset_sum_problem.coverage" NAME="subset sum problem Coverage Results" MODIFIED="1577759452746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/LeetCode$lc1047__Remove_All_Adjacent_Duplicates_in_String.coverage" NAME="lc1047 – Remove All Adjacent Duplicates in String Coverage Results" MODIFIED="1578469913596" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <state width="1419" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1593758682400" />
   </component>
 </project>

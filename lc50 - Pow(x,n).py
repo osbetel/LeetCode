@@ -1,4 +1,3 @@
-
 def myPow(x, n):
     if n == 0: return 1
     # if 0 < x < 1:
@@ -13,6 +12,3 @@ def myPow(x, n):
     if n > 0: return r
     else: return 1 / r
 
-
-
-print(myPow(2.0, 1024))
