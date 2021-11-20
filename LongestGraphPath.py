@@ -4,36 +4,38 @@ class Node:
         self.val = value
         self.neighbors = neighbors
 
+    def __str__(self):
+        return self.val
+
 
 class Graph:
     def __init__(self, nodes: [Node]):
         self.nodes = nodes
 
+
+    def __str__(self):
+        s = ""
+        for n in self.nodes:
+            s += f"{n} --> {[k.val for k in n.neighbors]}\n"
+        return s
+
 def longestPath(graph):
-    l = 0
+    paths = []
     for n in graph.nodes:
-        # print(n.neighbors)
-        if n.neighbors == []:
-            return 1
-        l = max(longestPathStartingAtNode(n, 0, []))
-    return l
+        paths.append(longestPathStartingAtNode(n, 0, []))
+    return paths
 
 
 def longestPathStartingAtNode(node, length, visited):
-
-    if node in visited and len(node.neighbors) == 1:
+    print(node.val, length, [v.val for v in visited])
+    if node in visited:
         return length
-
     else:
-    # # does have neighbors
-    # # n.neighbors exists
         mx = 0
+        # haven't visited this node before
         visited.append(node)
         for n in node.neighbors:
-            # print(node.val)
-            mx = max(mx, longestPathStartingAtNode(n, length + 1, visited))
-            # print(longestPathStartingAtNode(n, length + 1, node))
-
+            mx = max(length, longestPathStartingAtNode(n, length + 1, visited))
     return mx
 
 # A – C
@@ -59,11 +61,8 @@ D.neighbors = [B]
 E.neighbors = [B,F]
 F.neighbors = [E]
 
-
-
-
-
 graph = Graph([A,B,C,D,E,F])
+print(graph)
 
 print(longestPath(graph))
 

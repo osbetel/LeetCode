@@ -75,28 +75,32 @@ def mergeSort(alist):
    return alist
 
 
+def mergesort2(lst):
+    # print(lst)
+    if len(lst) == 1:
+        return lst
+    mid = len(lst) // 2
+    left = mergesort2(lst[:mid])
+    right = mergesort2(lst[mid:])
 
+    res = []
+    i = j = 0
+    while i < len(left) and j < len(right):
+        if left[i] < right[j]:
+            res.append(left[i])
+            i += 1
+        else:
+            res.append(right[j])
+            j += 1
 
-a = [1,2,45,5,1,2,6,76,12,3,6,6,1,3,6,6,87,98,9,9,98,12,3,7,6,32,2,764,745,8,89,2,34,
-     1,23,5,6,2,85,4,63,9,5,1,78,4,251,1,5,4,65,6,4,321,68,498,498,4132,198,462,198,
-     1,23,1685,42,1,496,4,4,84,4,44,4,4,4,4,4,4,4,4,4,45,84,651,78,42,168,4968,3,1,6]
+    # one of the two halves is empty
+    # print(left[i:], right[j:], res)
+    res.extend(left[i:])
+    res.extend(right[j:])
+    # print(res)
+    # print()
+    return res
 
-seq = "ACTCTATCTATCGATGCTAGCTAGCTA"
-index = [x for x in range(len(seq))]
-print(range(10))
-def lex_sort(seq, index):
-    l = sorted(index, key=lambda x: seq[x:])
-    print(l)
-
-
-    from sys import getsizeof as gs
-    print(gs(l))
-    print(gs(seq))
-    print(gs(index))
-print(str(reversed("mexico")))
-lex_sort(seq, index)
-# print(quicksort(a, 0, len(a) - 1))
-# print(mergeSort(a))
 
 
 

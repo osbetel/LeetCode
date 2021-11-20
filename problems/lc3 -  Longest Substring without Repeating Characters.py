@@ -21,6 +21,13 @@ def lengthOfLongestSubstring2(s):
     start = maxLength = 0
     usedChar = {}
 
+    # a few things:
+    # we keep track of two things, all characters we've seen in a map (char: index last seen)
+    # and the start index of our substring
+    # we iterate across the whole string once, O(n) time.
+    # if we see any character that is non-unique, ie: we've seen it before, AND the last index is less than the
+    # current index of our substring, then we set the max length and keep iterating
+
     for i in range(len(s)):
         if s[i] in usedChar and start <= usedChar[s[i]]:
             start = usedChar[s[i]] + 1
@@ -28,7 +35,6 @@ def lengthOfLongestSubstring2(s):
             maxLength = max(maxLength, i - start + 1)
 
         usedChar[s[i]] = i
-
     return maxLength
 
 
@@ -61,10 +67,10 @@ def lengthOfLongestSubstring(s):
 
 
 print(lengthOfLongestSubstring2("abcabcbb")) # 3
-print(lengthOfLongestSubstring2("bbbbb"))    # 1
-print(lengthOfLongestSubstring2("pwwkew"))   # 3
-print(lengthOfLongestSubstring2("aab"))      # 2
-print(lengthOfLongestSubstring2("dvdf"))     # 3
-print(lengthOfLongestSubstring2("anviaj"))   # 5
+# print(lengthOfLongestSubstring2("bbbbb"))    # 1
+# print(lengthOfLongestSubstring2("pwwkew"))   # 3
+# print(lengthOfLongestSubstring2("aab"))      # 2
+# print(lengthOfLongestSubstring2("dvdf"))     # 3
+# print(lengthOfLongestSubstring2("anviaj"))   # 5
 
 
