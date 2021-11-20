@@ -10,6 +10,7 @@ def quicksort(myList, start, end):
         quicksort(myList, pivot+1, end)
     return myList
 
+
 def partition(myList, start, end):
     pivot = myList[start]
     left = start+1
@@ -79,8 +80,23 @@ def mergeSort(alist):
 a = [1,2,45,5,1,2,6,76,12,3,6,6,1,3,6,6,87,98,9,9,98,12,3,7,6,32,2,764,745,8,89,2,34,
      1,23,5,6,2,85,4,63,9,5,1,78,4,251,1,5,4,65,6,4,321,68,498,498,4132,198,462,198,
      1,23,1685,42,1,496,4,4,84,4,44,4,4,4,4,4,4,4,4,4,45,84,651,78,42,168,4968,3,1,6]
+
+seq = "ACTCTATCTATCGATGCTAGCTAGCTA"
+index = [x for x in range(len(seq))]
+print(range(10))
+def lex_sort(seq, index):
+    l = sorted(index, key=lambda x: seq[x:])
+    print(l)
+
+
+    from sys import getsizeof as gs
+    print(gs(l))
+    print(gs(seq))
+    print(gs(index))
+print(str(reversed("mexico")))
+lex_sort(seq, index)
 # print(quicksort(a, 0, len(a) - 1))
-print(mergeSort(a))
+# print(mergeSort(a))
 
 
 

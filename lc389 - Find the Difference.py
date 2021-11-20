@@ -15,8 +15,8 @@
 
 def findTheDifference(s, t):
 
-    for tring in s:
-        t = t.replace(tring, "", 1)
+    for string in s:
+        t = t.replace(string, "", 1)
 
     return t
 
