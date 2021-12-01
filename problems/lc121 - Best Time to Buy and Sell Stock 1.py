@@ -28,6 +28,7 @@ def maxProfit(prices: [int]):
             maximum = p
         profit = max(profit, maximum - minimum)
         # print(p, minimum, maximum, maximum - minimum)
+    print(profit)
     return profit
 
 maxProfit([2,4,1])       #2

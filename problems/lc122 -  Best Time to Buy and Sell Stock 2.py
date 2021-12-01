@@ -38,10 +38,10 @@ def multiMaxProfit(prices: [int]):
 
 
 
-multiMaxProfit([2,4,1])       #2
-multiMaxProfit([7,1,5,3,6,4]) #7
-multiMaxProfit([7,6,4,3,1])   #0
-multiMaxProfit([1,2,3,4,5])   #4
+print(multiMaxProfit([2,4,1]))       #2
+print(multiMaxProfit([7,1,5,3,6,4])) #7
+print(multiMaxProfit([7,6,4,3,1]))   #0
+print(multiMaxProfit([1,2,3,4,5]))   #4
 
 
 
