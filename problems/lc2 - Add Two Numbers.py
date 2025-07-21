@@ -1,4 +1,4 @@
-
+from typing import Optional
 # You are given two non-empty linked lists representing two non-negative integers.
 # The digits are stored in reverse order and each of their nodes contain a single digit.
 # Add the two numbers and return it as a linked list.
@@ -11,66 +11,93 @@
 # Output: 7 -> 0 -> 8
 # Explanation: 342 + 465 = 807.
 
+# Definition for singly-linked list.
 class ListNode:
-    def __init__(self, x):
-        self.val = x
-        self.next = None
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+    
+    def __str__(self):
+        return str(self.val)
 
-def addTwoNumbers(l1: ListNode, l2: ListNode) -> ListNode:
-    # approaches:
-    # 1) we can write a function to read linked lists into integers, add the integers, and have a function to turn
-    #       integers back into linked lists, reversed and all. Downside is that it would be O(n + k + j), where
-    #       n, k, j are the lengths of the two input lists, and expected output list.
-    # 2) Note that the lists are in reverse order though, which means the place / base of the numbers
-    #       goes ones -> tens -> hundreds... so on. This means that adding one to another directly is fine
-    #       because, should we need to "carry a one," then it simply gets tacked onto the next node.
-    #       This of course overwrites one of the lists as we do it in-place instead of creating a new list.
+def addTwoNumbers(l1: Optional[ListNode], l2: Optional[ListNode]) -> ListNode:
+    # give two non empty linked lists where the digits as stored in reverse order,
+    # each node contains a single digit
+    # this means first node is ones place, second is tens, then hundreds, etc
+    # 1) put a pointer at the start of each list, 
+    # 2) iterate and add one at a time, accounting for carrying 10+
+    # 3) when one of the pointers has self.next is None, set to 0 and continue iteration until we run out
+    assert l1 is not None and l2 is not None
 
-    result = ListNode(0)
-    result_tail = result
+    # pointers
+    p1: ListNode = l1
+    p2: ListNode = l2
+    root = ListNode(0, None)
+    r = root
     carry = 0
 
-    while l1 or l2 or carry:
-        val1 = (l1.val if l1 else 0)
-        val2 = (l2.val if l2 else 0)
-        carry, out = divmod(val1 + val2 + carry, 10)
+    while p1 is not None or p2 is not None or carry:
+        # get values from current nodes
+        val1 = p1.val if p1 else 0
+        val2 = p2.val if p2 else 0
+        
+        # add current nodes plus carry
+        v = val1 + val2 + carry
+        carry = v // 10
+        v = v % 10
+        
+        # create new node with the digit
+        r.next = ListNode(v, None)
+        r = r.next
 
-        result_tail.next = ListNode(out)
-        result_tail = result_tail.next
+        # move pointers forward if they exist
+        p1 = p1.next if p1 else None
+        p2 = p2.next if p2 else None
 
-        l1 = (l1.next if l1 else None)
-        l2 = (l2.next if l2 else None)
-
-    return result.next
+    return root.next
+        
 
 def printListNode(l: ListNode):
+    r = []
     c = l
     while c is not None:
-        print(c.val)
+        r.append(c.val)
         c = c.next
+    print(r)
+    return r
 
 
-a = ListNode(8)
-b = ListNode(9)
-c = ListNode(9)
-# a = ListNode(1)
-a.next = b
-b.next = c
+def construct_list(l: [int]):
+    root = ListNode(0, None)
+    r = root
+    for i in range(len(l)):
+        r.val = l[i]
 
-# i = ListNode(5)
-# j = ListNode(6)
-# k = ListNode(4)
-i = ListNode(2)
-# j = ListNode(9)
-# i.next = j
-# j.next = k
+        # avoid trailing 0 node
+        if i < len(l) - 1:
+            r.next = ListNode(0, None)
+            r = r.next
+
+    return root
+
+a = [
+    [2, 4, 3],
+    [9,9,9,9,9,9,9],
+    [0],
+    [9, 9]
+]
+b = [
+    [5, 6, 4],
+    [9,9,9,9],
+    [0],
+    [9, 9]
+]
+
+for i, j in zip(a, b):
+    k = addTwoNumbers(construct_list(i), construct_list(j))
+    printListNode(k)
 
 
-num = addTwoNumbers(a, i)
-printListNode(num)
-# printListNode(a)
-# print()
-# printListNode(i)
 
 
 

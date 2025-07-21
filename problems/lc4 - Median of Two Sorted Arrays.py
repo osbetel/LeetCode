@@ -2,64 +2,39 @@ import random
 import numpy as np
 
 # There are two sorted arrays nums1 and nums2 of size m and n respectively.
-# Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).
+# Find the median of the two sorted arrays.
 # You may assume nums1 and nums2 cannot be both empty.
 def findMedianSortedArrays(l1, l2):
-    # approach: how do we solve this in log(m + n) time? First, consider how we can solve the median of a list in
-    # log(n) time... You jump right to the middle with a binary "search" (really just access the middle element,
-    # 1 element if list size is odd, middle 2 if it's even) and return the median.
-    # in order to do two lists we need to perform this binary search on both lists at the same time.
-    m, n = len(l1), len(l2)
-    total_length = m + n
-    median_index = total_length // 2  # check later if even or odd
-    previous_num = -1
-    m, n = 0, 0
-    while m + n < median_index:
-        if l1[m] > l2[n]:
-            previous_num = l2[n]
-            if n == len(l2):
-                m += 1
+    # approaches:
+    # 1) can combine two sorted lists in O(n) time and then find the median in O(log(n)) time
+    # 2) there is a way to do in O(log(n + m)) time
+    def combineSortedLists(l1, l2):
+        i, j = 0, 0
+        r = []
+        while i < len(l1) and j < len(l2):
+            a = l1[i]
+            b = l2[j]
+            if a < b:
+                r.append(a)
+                i += 1
             else:
-                n += 1
-            median = l2[n]
-        elif l1[m] < l2[n]:
-            previous_num = l1[m]
-            if m == len(l1):
-                n += 1
-            else:
-                m += 1
-            median = l1[m]
-        elif l1[m] == l2[n]:
-                previous_num = l1[m]
-                if m == len(l1):
-                    n += 1
-                else:
-                    m += 1
-                median = l1[m]
-        print(m, n, median_index)
-        if m + n >= median_index:
-            break
+                r.append(b)
+                j += 1
+        return r
 
-    if total_length % 2 == 0:
-        print("EVEN")
-        median = median + previous_num
-        median /= 2
-    print(l1, l2)
-    print(sorted(l1 + l2))
-    return median
-
-
-
-
-def klogkFindMedianSortedArrays(nums1, nums2):
-    # this one works lol, but it's in O((m + n)*log(m + n)) time. Which, for smaller sized arrays is not bad.
-    AplusB = nums1 + nums2
-    AplusB.sort()
-    l = len(AplusB)
-    if l % 2 != 0:
-        return AplusB[l // 2]
+    L = combineSortedLists(l1, l2)
+    print(L)
+    if len(L) % 2 == 0:
+        left = len(L) // 2 - 1
+        print(left)
+        right = len(L) // 2
+        print(right)
+        median = (L[left] + L[right]) / 2
     else:
-        return (AplusB[(l // 2) - 1] + AplusB[l // 2]) / 2
+        left = len(L) // 2
+        print(left)
+        median = L[left]
+    print(median)
 
 
 def generateTestArray():
