@@ -1,3 +1,4 @@
+import sys
 from collections import defaultdict
 
 class Graph:
@@ -10,7 +11,7 @@ class Graph:
 
         # function to add an edge to graph
 
-    def addEdge(self, u, v):
+    def addEdge(self, u, v, value):
         self.graph[u].append(v)
 
         # A function used by DFS
@@ -70,8 +71,28 @@ class Graph:
                     queue.append(i)
                     visited[i] = True
 
+    def djikstra(self, start):
+        # from start -> return a list of shortest paths to all other nodes
+        unvisited = list(self.graph.keys())
+        shortest_paths = dict(zip(unvisited, [sys.maxsize] * len(unvisited)))
+        shortest_paths[start] = 0
+        prev_paths = {}
 
-
+        while unvisited:
+            current_min_vertex = None
+            for v in unvisited:
+                if current_min_vertex == None:
+                    current_min_vertex = v
+                elif shortest_paths[v] < shortest_paths[current_min_vertex]:
+                    current_min_vertex = v
+                neighbors = self.graph[current_min_vertex]
+                for n in neighbors:
+                    tentative_value = shortest_paths[current_min_vertex] + graph.value(current_min_vertex, n)
+                    if tentative_value < shortest_paths[n]:
+                        shortest_paths[n] = tentative_value
+                        # We also update the best path to the current node
+                        prev_paths[n] = current_min_vertex
+        return prev_paths, shortest_paths
 
 g = Graph()
 g.addEdge(0, 1)
@@ -83,3 +104,4 @@ g.addEdge(3, 3)
 
 print(g.DFS(2))
 print(g.BFS(2))
+g.djikstra(2)

@@ -49,6 +49,29 @@ def recursiveTouch(y, x, grid):
     return grid
 
 
+def count_islands(mat):
+    if len(mat) == 0:
+        return 0
+    n, m = len(mat), len(mat[0])
+    islands = 0
+    for i in range(n):
+        for j in range(m):
+            explore_island(mat, i, j)
+            islands += 1
+    return islands
+
+
+def explore_island(mat, i, j):
+    # base case
+    if not (0 <= i < len(mat)) or not (0 <= j < len(mat[0])) or mat[i][j] != 1:
+        return
+    else:
+        mat[i][j] = -1
+
+    explore_island(mat, i + 1, j)
+    explore_island(mat, i - 1, j)
+    explore_island(mat, i, j + 1)
+    explore_island(mat, i, j - 1)
 
 test1 = [
     ["1","1","1","1","0"],

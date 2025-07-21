@@ -60,6 +60,19 @@ def maxSubArray(nums):
         # print(nums)
     return maximum
 
+def maxSubArrayDP(nums):
+    return maxSubArray(nums)
+    n = len(nums)
+    dp = [0] * n # where dp[i] is the max subarray ending at index nums[i]
+    maximum = dp[0]
+    for i in range(1, n):
+        if dp[i - 1] > 0:
+            dp[i] = nums[i] + dp[i - 1]
+        else:
+            dp[i] = nums[i] + 0
+    return maximum
+
+
 
 
 def s2():
@@ -69,15 +82,15 @@ def s2():
         k.append(rand.randint(-100000, 100000))
     print(maxSubArray(k))
 
-print(maxSubArray([-2,1,-3,4,-1,2,1,-5,4])) # 6
-print(maxSubArray([-214124,-12489]))        # -12489
-print(maxSubArray([]))                      # None
-print(maxSubArray([9]))                     # 9
-print(maxSubArray([214478352,-2144783523])) # 2144783523
-print(maxSubArray([-2,-1]))                 # -1
-print(maxSubArray([-2,1]))                  # 1
-print(maxSubArray([1,2]))                   # 3
-print(maxSubArray([1,-1,-2]))               # 1
+print(maxSubArrayDP([-2,1,-3,4,-1,2,1,-5,4])) # 6
+print(maxSubArrayDP([-214124,-12489]))        # -12489
+print(maxSubArrayDP([]))                      # None
+print(maxSubArrayDP([9]))                     # 9
+print(maxSubArrayDP([214478352,-2144783523])) # 2144783523
+print(maxSubArrayDP([-2,-1]))                 # -1
+print(maxSubArrayDP([-2,1]))                  # 1
+print(maxSubArrayDP([1,2]))                   # 3
+print(maxSubArrayDP([1,-1,-2]))               # 1
 
 
 

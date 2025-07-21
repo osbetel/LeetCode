@@ -40,6 +40,6 @@ print(twoSum([-1,-2,-3,-4,-5],-8))    # [2,4]
 print(twoSum([-3,4,3,90],0))          # [0,2]
 print(twoSum([3,2,95,4,-3],92))       # [2,4]
 
-print(time.time_ns() - start)
+# print(time.time_ns() - start)
 
 

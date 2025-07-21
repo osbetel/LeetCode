@@ -28,6 +28,7 @@ def knapsack01(target, arr):
     # given a target value and an array of tokens with different values,
     # can you make the target with the values in the arr?
     if target == 0:
+        pass
 
 
 
