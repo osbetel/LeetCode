@@ -18,118 +18,59 @@
 #     # so here, consider a string S of length n
 #     # S is a palindrome if S[0] == S[n - 1], AND if S[1, n - 1 - 1] is a palindrome
 
-class Solution:
-    cache = set()
+def longestPalindrome(s):
+    # not the optimal solution but we will implement a expand around the center style solution
+    #   def expand_around_center(s, left, right):
+    #     while left >= 0 and right < len(s) and s[left] == s[right]:
+    #         left -= 1
+    #         right += 1
+    #     return right - left - 1  # length of palindrome
     longest = ""
+    if len(s) % 2 == 1:
+        # handle odd length strings, start at middle, expand outward
+        for i in range(len(s)):
+            # for each character position, expand outwards while characters match
+            left, right = i, i
+            while left >= 0 and right < len(s) and s[left] == s[right]:
+                # left >= 0 and right < len(s): we start at 0, 0 and remain within bounds of the string
+                # s[left] == s[right]: a palindrome should have the same character from center emanating outward
+                current_palindrome = s[left:right + 1]
+                if len(current_palindrome) > len(longest):
+                    longest = current_palindrome
+                left -= 1
+                right += 1
+    else:
+        # handle even length strings, there is no middle character
+        # but the middle of an even length palindrome should be two of the same character, eg cbba or bbaab
+        for i in range(len(s)):
+            # for each character position, expand outwards while characters match
+            left, right = i, i + 1
+            while left >= 0 and right < len(s) and s[left] == s[right]:
+                # left >= 0 and right < len(s): we start at 0, 0 and remain within bounds of the string
+                # s[left] == s[right]: a palindrome should have the same character from center emanating outward
+                current_palindrome = s[left:right + 1]
+                if len(current_palindrome) > len(longest):
+                    longest = current_palindrome
+                left -= 1
+                right += 1
 
-    def longestPalindrome(self, s: str) -> str:
-        self.recurse(s)
-        r = self.longest
-        self.cache.clear()
-        self.longest = ""
-        return r
-
-    def recurse(self, s: str) -> str:
-        k = [s, s[:-1],s[1:]]
-        for sub in k:
-            if sub in self.cache:
-                continue
-            elif sub == "":
-                continue
-            else:
-                self.cache.add(sub)
-                l = len(sub)
-                if self.is_palindrome(sub):
-                    if l > len(self.longest):
-                        self.longest = sub
-        a, b = "", ""
-        if s[:-1] != "":
-            a = self.recurse(s[:-1])
-        if s[1:] != "":
-            b = self.recurse(s[1:])
-        return max(self.longest, a, b)
-
-    def is_palindrome(self, s, count=0):
-        if len(s) <= 1:
-            return True
-        if s[0] == s[-1]:
-            return self.is_palindrome(s[1:-1], count+2)
-        return False
-
-
-def is_palindrome(s):
-    if len(s) <= 1:
-        return True
-    if s[0] == s[-1]:
-        return is_palindrome(s[1:-1])
-    return False
-
-longest = ""
-
-def longest_palindrome(s):
-    global longest
-    # a new approach required because the above with memoization is not suitable
-    # once again we approach with the top down approach -> S is a palindrome iff S[1:-1] is also a palindrome
-    # one change we can make though is that instead of caching all the recursive subproblems, we need to
-    # avoid those recursive branches entirely
-    if is_palindrome(s):
-        if len(longest) < len(s):
-            longest = s
-    if s[1:] != "":
-        longest_palindrome(s[1:])
-    if s[:-1] != "":
-        longest_palindrome(s[:-1])
     return longest
 
-def longestPalindrome1(s: str) -> str:
 
-    n = len(s)
-    # Form a bottom-up dp 2d array
-    # dp[i][j] will be 'true' if the string from index i to j is a palindrome.
-    dp = [[False] * n for _ in range(n)]
-
-    ans = ''
-    # every string with one character is a palindrome
-    for i in range(n):
-        dp[i][i] = True
-        ans = s[i]
-
-    maxLen = 1
-    for start in range(n - 1, -1, -1):
-        for end in range(start + 1, n):
-            # palindrome condition
-            if s[start] == s[end]:
-                # if it's a two char. string or if the remaining string is a palindrome too
-                if end - start == 1 or dp[start + 1][end - 1]:
-                    dp[start][end] = True
-                    if maxLen < end - start + 1:
-                        maxLen = end - start + 1
-                        ans = s[start: end + 1]
-    return ans
-
-
-import time
-
-test = ["abba"]
-expected = [""]
-
-for a, b in zip(test, expected):
-    now = time.time_ns()
-    k = longest_palindrome(a)
-    longest = ""
-    later = time.time_ns()
-    print(later - now, k, b, "current")
-
-    now = time.time_ns()
-    s = Solution()
-    k = s.longestPalindrome(a)
-    later = time.time_ns()
-    print(later - now, k, b, "prior")
-
-    now = time.time_ns()
-    k = longestPalindrome1(a)
-    later = time.time_ns()
-    print(later - now, k, b, "new")
+test = [
+    # "babad",     # Expected: "bab" or "aba" 
+    "cbbd",      # Expected: "bb"
+    "racecar",   # Expected: "racecar"
+    "abcdef",    # Expected: "a" (any single char)
+    "aabbaa",    # Expected: "aabbaa"
+    "abacabad",  # Expected: "abacaba"
+    "a",         # Expected: "a"
+    ""           # Expected: ""
+]
+expected = ["bab", "bb", "racecar", "a", "aabbaa", "abacaba", "a", ""]
+for t in test:
+    print(longestPalindrome(t))
+    break
 
 
 

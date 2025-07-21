@@ -20,21 +20,56 @@ def findMedianSortedArrays(l1, l2):
             else:
                 r.append(b)
                 j += 1
+        
+        r += l1[i:]
+        r += l2[j:]
         return r
 
     L = combineSortedLists(l1, l2)
-    print(L)
     if len(L) % 2 == 0:
         left = len(L) // 2 - 1
-        print(left)
         right = len(L) // 2
-        print(right)
         median = (L[left] + L[right]) / 2
     else:
         left = len(L) // 2
-        print(left)
         median = L[left]
-    print(median)
+    return median
+
+
+def findMedianSortedArraysOptimal(nums1, nums2):
+    # Ensure nums1 is the smaller array
+    if len(nums1) > len(nums2):
+        nums1, nums2 = nums2, nums1
+    
+    m, n = len(nums1), len(nums2)
+    left, right = 0, m
+    
+    while left <= right:
+        # Partition nums1
+        i = (left + right) // 2
+        # Partition nums2 such that left side has (m+n+1)//2 elements
+        j = (m + n + 1) // 2 - i
+        
+        # Get boundary elements (use -inf/inf for edge cases)
+        maxLeft1 = float('-inf') if i == 0 else nums1[i-1]
+        minRight1 = float('inf') if i == m else nums1[i]
+        
+        maxLeft2 = float('-inf') if j == 0 else nums2[j-1]
+        minRight2 = float('inf') if j == n else nums2[j]
+        
+        # Check if partition is valid
+        if maxLeft1 <= minRight2 and maxLeft2 <= minRight1:
+            # Found correct partition
+            if (m + n) % 2 == 0:
+                return (max(maxLeft1, maxLeft2) + min(minRight1, minRight2)) / 2
+            else:
+                return max(maxLeft1, maxLeft2)
+        elif maxLeft1 > minRight2:
+            # i is too large, move left
+            right = i - 1
+        else:
+            # i is too small, move right
+            left = i + 1
 
 
 def generateTestArray():
@@ -48,13 +83,7 @@ def generateTestArray():
         l2.append(random.randint(0, 10))
     return sorted(l1), sorted(l2)
 
+
 X, Y = generateTestArray()
-
-try:
-    k = findMedianSortedArrays(X, Y)
-    print(k)
-except Exception as e:
-    print(e)
-    print(X, Y)
-
-print(f"numpy: {np.median(X + Y)}")
+k = findMedianSortedArrays(X, Y)
+print(k)
