@@ -25,52 +25,46 @@ def longestPalindrome(s):
     #         left -= 1
     #         right += 1
     #     return right - left - 1  # length of palindrome
-    longest = ""
-    if len(s) % 2 == 1:
-        # handle odd length strings, start at middle, expand outward
-        for i in range(len(s)):
-            # for each character position, expand outwards while characters match
-            left, right = i, i
-            while left >= 0 and right < len(s) and s[left] == s[right]:
-                # left >= 0 and right < len(s): we start at 0, 0 and remain within bounds of the string
-                # s[left] == s[right]: a palindrome should have the same character from center emanating outward
-                current_palindrome = s[left:right + 1]
-                if len(current_palindrome) > len(longest):
-                    longest = current_palindrome
-                left -= 1
-                right += 1
-    else:
-        # handle even length strings, there is no middle character
-        # but the middle of an even length palindrome should be two of the same character, eg cbba or bbaab
-        for i in range(len(s)):
-            # for each character position, expand outwards while characters match
-            left, right = i, i + 1
-            while left >= 0 and right < len(s) and s[left] == s[right]:
-                # left >= 0 and right < len(s): we start at 0, 0 and remain within bounds of the string
-                # s[left] == s[right]: a palindrome should have the same character from center emanating outward
-                current_palindrome = s[left:right + 1]
-                if len(current_palindrome) > len(longest):
-                    longest = current_palindrome
-                left -= 1
-                right += 1
+    longest = s[0] if s else ""
+    for i in range(len(s)):
+        # for each character, expand left and right until palindorme invalid
+        # then record length
+        left, right = i, i
+        while 0 <= left and right < len(s):
+            if s[left] != s[right]:
+                break
+            current_string = s[left : right + 1]
+            if len(current_string) > len(longest):
+                longest = current_string
+            left -= 1
+            right += 1
+
+        left, right = i, i + 1
+        while 0 <= left and right < len(s):
+            if s[left] != s[right]:
+                break
+            current_string = s[left : right + 1]
+            if len(current_string) > len(longest):
+                longest = current_string
+            left -= 1
+            right += 1
 
     return longest
 
 
 test = [
-    # "babad",     # Expected: "bab" or "aba" 
+    "babad",     # Expected: "bab" or "aba" 
     "cbbd",      # Expected: "bb"
     "racecar",   # Expected: "racecar"
     "abcdef",    # Expected: "a" (any single char)
     "aabbaa",    # Expected: "aabbaa"
     "abacabad",  # Expected: "abacaba"
-    "a",         # Expected: "a"
+    "abb",         # Expected: "a"
     ""           # Expected: ""
 ]
-expected = ["bab", "bb", "racecar", "a", "aabbaa", "abacaba", "a", ""]
+expected = ["bab", "bb", "racecar", "a", "aabbaa", "abacaba", "bb", ""]
 for t in test:
     print(longestPalindrome(t))
-    break
 
 
 
