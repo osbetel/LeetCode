@@ -36,65 +36,98 @@ def merge(
     nums2: List[int],
     n: int
 ):
-    # so nums1 has a length of m + n guarnateed, and it has m digits
-    # arrays in non decreasing sort order
-    # approach? we can do a sort of bubble sort? Iterate over nums2 and insert elements into nums1 based? This would require multiple
-    # for loops over nums1 though so O(n^2) worst case.
-    # better way? we can have two pointers, one at the front of each array.
-    # while loop -> we move the left pointer up until left value is greater than right value
-    # -> then we swap elements
-    # -> continue this process until left value is less than right value and then swap
-    # -> increment right pointer, repeat to end
+    # approach - [1,2,5,0,0,0], [2,5,6]. O(m + n) time, O(1) space
+    # take this example. We usde a three pointer approach, left, right, and insert.
+    # left = last element of nums1 (that is non zero)
+    # right = last element of nums2
+    # insert = last index in nums1 (will be a zero)
+    # then while the right pointer > -1
+    # 1) if left_val <= right_val -> insert right value to insertion pointer, decrement right and insert
+    # 2) if left val > right_val, insert left value to insertion pointer, decrement left and insert
     if not nums2:
         return nums1
 
-    def swap(i, j, a1, a2):
-        # swap elements a1[i] <=> a2[j]
-        temp = a1[i]
-        a1[i] = a2[j]
-        a2[j] = temp
-
-    left = 0
-    right = 0
+    left = m - 1  # last element of nums1
+    right = n - 1  # last element of nums2
+    insert = m + n - 1  # end of nums1
 
     # what are the conditions for a swap?
-    # 1) while we are in the bounds of left < m, if left_val > right_val, swap
+    # for i in range(10):
+    # while right > -1:
+    #     left_val = nums1[left] if left > 0 else -1
+    #     right_val = nums2[right] if right > 0 else -1
+    #     print(left, right, insert, nums1, nums2)
+    #     if left_val <= right_val:
+    #         nums1[insert] = nums2[right]
+    #         right -=1
+    #         insert -=1
+    #     elif left_val > right_val:
+    #         nums1[insert] = nums1[left]
+    #         insert -= 1
+    #         left -= 1
+    # return nums1
 
-    while left < m:
-        left_val = nums1[left]
-        right_val = nums2[right]
-        if left_val > right_val:
-            swap(left, right, nums1, nums2)
-            left +=1
+    while right >= 0:
+        # nums1 exhausted or nums2 element is larger, insert from nums2, else nums1
+        if left < 0 or nums2[right] > nums1[left]:
+            nums1[insert] = nums2[right]
+            right -= 1
         else:
-            left += 1
-
-    # at this point, the left array has been exhausted, append right array, account for 0s 
-    for i in range(left, m + n):
-        swap(left, right, nums1, nums2)
-        left_val = nums1[left]
-        right_val = nums2[right]
-        if right_val == 0:
-            right += 1
-        elif left_val == 0:
-            left += 1
-        else:
-            left += 1
-
-    if left_val == 0:
-        swap(left, right, nums1, nums2)
-
-    print(left, right, nums1, nums2, m)
+            nums1[insert] = nums1[left]
+            left -= 1
+        insert -= 1
 
     return nums1
 
 
+def mergeBruteForce(nums1, m, nums2, n):
+    # how would we approach this in the brute force scenario?
+    # 1) could just combine lists and then do an in-place sort?
+    
+    # approach 1, merge arrays and then sort
+    # this is O(n log n)
+    insert = m
+    for i in range(n):
+        nums1[insert] = nums2[i]
+        insert += 1
+    nums1.sort()
+    return nums1
+
+
+def mergeTwoPointer(nums1, m, nums2, n):
+    # approach 3: two-pointer with extra space
+    # copy nums1 to auxiliary array, then merge from beginning
+    # O(m+n) time, O(m) space
+    
+    nums1_copy = nums1[:m]  # copy only the elements that are not zeros
+
+    # now we can approach this like merging two sorted arrays with pointers with nums1 as the output array
+    left = 0
+    right = 0
+    insert = 0
+    while insert < m + n:
+        left_val = nums1_copy[left] if left < m else -1
+        right_val = nums2[right] if right < n else -1
+        # print(left, right, insert, nums1_copy, nums2, nums1)
+        if left_val <= right_val and left < m:
+            nums1[insert] = left_val
+            left += 1
+        elif right < n:
+            nums1[insert] = right_val
+            right += 1
+        else:
+            print("spork")
+            break
+        insert += 1
+        
+    return nums1
+
 test_cases = [
-    # ([1,2,5,0,0,0], 3, [2,5,6], 3),
+    ([1,2,5,0,0,0], 3, [2,5,6], 3),
     ([2,2,7,0,0,0], 3, [5,5,7], 3),
-    # ([1] , 1, [], 0),
-    # ([] , 0, [1], 1),
-    # ([0],0 ,[1], 1)
+    ([1] , 1, [], 0),
+    ([0],0 ,[1], 1),
+    ([2, 0], 1, [1], 1)
 ]
 
 for t in test_cases:

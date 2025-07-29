@@ -5,71 +5,87 @@ import numpy as np
 # Find the median of the two sorted arrays.
 # You may assume nums1 and nums2 cannot be both empty.
 def findMedianSortedArrays(l1, l2):
-    # approaches:
-    # 1) can combine two sorted lists in O(n) time and then find the median in O(log(n)) time
-    # 2) there is a way to do in O(log(n + m)) time
-    def combineSortedLists(l1, l2):
-        i, j = 0, 0
-        r = []
-        while i < len(l1) and j < len(l2):
-            a = l1[i]
-            b = l2[j]
-            if a < b:
-                r.append(a)
-                i += 1
-            else:
-                r.append(b)
-                j += 1
-        
-        r += l1[i:]
-        r += l2[j:]
-        return r
+    # approach - there's an easy and somewhat efficient approach
+    # we can combine two sorted arrays in O(n) time and then find the median instantly
+    
+    def combineSortedArrays(a1, a2):
+        l = []
+        left, right = 0, 0
+        while left < len(a1) or right < len(a2):
+            left_val = a1[left] if left < len(a1) else 10 ** 10
+            right_val = a2[right] if right < len(a2) else 10 ** 10
 
-    L = combineSortedLists(l1, l2)
-    if len(L) % 2 == 0:
-        left = len(L) // 2 - 1
-        right = len(L) // 2
-        median = (L[left] + L[right]) / 2
+            # put the smaller element in the result array and increment its pointer
+            if left_val < right_val:
+                l.append(left_val)
+                left += 1
+            else:
+                l.append(right_val)
+                right += 1
+        
+        return l
+    
+    L = combineSortedArrays(l1, l2)
+    # print(L, len(L))
+    if len(L) % 2 == 1:
+        # odd length array, median is middle
+        return L[len(L) // 2]
     else:
-        left = len(L) // 2
-        median = L[left]
-    return median
-
-
-def findMedianSortedArraysOptimal(nums1, nums2):
-    # Ensure nums1 is the smaller array
-    if len(nums1) > len(nums2):
-        nums1, nums2 = nums2, nums1
+        return (L[len(L) // 2] + L[(len(L) // 2) - 1]) / 2
     
-    m, n = len(nums1), len(nums2)
-    left, right = 0, m
+
+def findMedianSortedArraysOptimal(l1, l2):
+    # approach - there is actually a way to do this in O(log(n + m)) time 
+    # a typical binary search on a sorted array is O(log n) time
+    # we can do something similar to a binary search here to find the media
+    # eg: [4, 4, 4, 5, 10], [3, 6, 8, 10] take these two arrays
+    # now partition them like so
+    # [4, 4, 4, | 5, 10] => [4, 4, 4], [5, 10]
+    # [3, | 6, 8, 10]    => [3],       [6, 8, 10]
+    # => logically same split to get sorted [3, 4, 4, 4, 5, 6, 8, 10, 10] 
+    # now every element on the left partitions smaller than every element in the right partitions
+    # then we just need to take the smallest element of the right partition and the largest of the left partition
+    # and the median will be one of those or the average of both of those
+
+    # whats the approach for finding the partitions?
+    # have two pointers, one at the start of the left array, one at the end of the right array
+    # make sure the left array is the smaller one
+    if len(l1) > len(l2):
+        return findMedianSortedArraysOptimal(l2, l1)
     
+    # partitions initially set at middle of left and right arrays
+    len1, len2 = len(l1), len(l2)
+    left = 0
+    right = len1
+
     while left <= right:
-        # Partition nums1
-        i = (left + right) // 2
-        # Partition nums2 such that left side has (m+n+1)//2 elements
-        j = (m + n + 1) // 2 - i
-        
-        # Get boundary elements (use -inf/inf for edge cases)
-        maxLeft1 = float('-inf') if i == 0 else nums1[i-1]
-        minRight1 = float('inf') if i == m else nums1[i]
-        
-        maxLeft2 = float('-inf') if j == 0 else nums2[j-1]
-        minRight2 = float('inf') if j == n else nums2[j]
-        
-        # Check if partition is valid
-        if maxLeft1 <= minRight2 and maxLeft2 <= minRight1:
-            # Found correct partition
-            if (m + n) % 2 == 0:
-                return (max(maxLeft1, maxLeft2) + min(minRight1, minRight2)) / 2
+        partition1 = (left + right) // 2
+        partition2 = (len1 + len2 + 1) // 2 - partition1
+        # print(partition1, partition2)
+        # When we partition both arrays there are 4 segments total. get max of both left and min of both right
+        # [4, 4, 4, | 5, 10] => [4, 4, 4], [5, 10]
+        # [3, | 6, 8, 10]    => [3],       [6, 8, 10]
+        max_left1 = float('-inf') if partition1 == 0 else l1[partition1 - 1]
+        min_right1 = float('inf') if partition1 == len1 else l1[partition1]
+        max_left2 = float('-inf') if partition2 == 0 else l2[partition2 - 1]
+        min_right2 = float('inf') if partition2 == len2 else l2[partition2]
+
+        # now that we have set our partitions and found our max left and min right values
+        # execute the binary search
+        if max_left1 <= min_right2 and max_left2 <= min_right1:
+            # condition for max_left1 < max_left2 and min_right1 and min_right2 are always true because the arrays
+            # are already pre sorted
+            # if we have an even length total array then median is average, else middle element
+            if (len1 + len2) % 2 == 0:
+                return (max(max_left1, max_left2) + min(min_right1, min_right2)) / 2
             else:
-                return max(maxLeft1, maxLeft2)
-        elif maxLeft1 > minRight2:
-            # i is too large, move left
-            right = i - 1
+                return max(max_left1, max_left2)
+        
+        # expand or contract left / right pointers based on max_left1 and min_right2, adjusts partition locations
+        elif max_left1 > min_right2:
+            right = partition1 - 1
         else:
-            # i is too small, move right
-            left = i + 1
+            left = partition1 + 1
 
 
 def generateTestArray():
@@ -84,6 +100,9 @@ def generateTestArray():
     return sorted(l1), sorted(l2)
 
 
-X, Y = generateTestArray()
-k = findMedianSortedArrays(X, Y)
-print(k)
+# X, Y = generateTestArray()
+X, Y = [3, 6], [5, 9, 10]
+print(X, Y)
+# print(findMedianSortedArrays(X, Y))
+print(findMedianSortedArraysOptimal(X, Y))
+
