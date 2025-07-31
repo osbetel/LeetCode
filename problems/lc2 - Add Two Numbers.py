@@ -1,4 +1,3 @@
-from typing import Optional
 # You are given two non-empty linked lists representing two non-negative integers.
 # The digits are stored in reverse order and each of their nodes contain a single digit.
 # Add the two numbers and return it as a linked list.
@@ -12,6 +11,7 @@ from typing import Optional
 # Explanation: 342 + 465 = 807.
 
 # Definition for singly-linked list.
+from typing import Optional
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
@@ -21,41 +21,39 @@ class ListNode:
         return str(self.val)
 
 def addTwoNumbers(l1: Optional[ListNode], l2: Optional[ListNode]) -> ListNode:
-    # give two non empty linked lists where the digits as stored in reverse order,
-    # each node contains a single digit
-    # this means first node is ones place, second is tens, then hundreds, etc
-    # 1) put a pointer at the start of each list, 
-    # 2) iterate and add one at a time, accounting for carrying 10+
-    # 3) when one of the pointers has self.next is None, set to 0 and continue iteration until we run out
-    assert l1 is not None and l2 is not None
-
-    # pointers
-    p1: ListNode = l1
-    p2: ListNode = l2
-    root = ListNode(0, None)
-    r = root
+    # given two linked lists where the numbers are stored in reverse order, add the numbers and return the sum as a linked list
+    # approach - two pointers, one at the end of each list
+    # iterate over lists
+    # then add numbers into a new list
+    # make sure to account for carrying 1 when values add up to 10 or more
+    # this of O(m + n) complexity
+    left, right = l1, l2
+    resultHead = ListNode()
+    result = resultHead
     carry = 0
 
-    while p1 is not None or p2 is not None or carry:
-        # get values from current nodes
-        val1 = p1.val if p1 else 0
-        val2 = p2.val if p2 else 0
-        
-        # add current nodes plus carry
-        v = val1 + val2 + carry
-        carry = v // 10
-        v = v % 10
-        
-        # create new node with the digit
-        r.next = ListNode(v, None)
-        r = r.next
+    while left is not None or right is not None:
+        lval = left.val if left else 0
+        rval = right.val if right else 0
+        val = lval + rval + carry
 
-        # move pointers forward if they exist
-        p1 = p1.next if p1 else None
-        p2 = p2.next if p2 else None
-
-    return root.next
+        result.val = val % 10
+        carry = val // 10
         
+        left = left.next if left else None
+        right = right.next if right else None
+        
+        if left is not None or right is not None or carry > 0:
+            result.next = ListNode()
+            result = result.next
+
+    if carry > 0:
+        result.val = carry
+
+    return resultHead
+    
+
+
 
 def printListNode(l: ListNode):
     r = []
@@ -82,15 +80,15 @@ def construct_list(l: [int]):
 
 a = [
     [2, 4, 3],
-    [9,9,9,9,9,9,9],
-    [0],
-    [9, 9]
+    # [9,9,9,9,9,9,9],
+    # [0],
+    # [9, 9]
 ]
 b = [
     [5, 6, 4],
-    [9,9,9,9],
-    [0],
-    [9, 9]
+    # [9,9,9,9],
+    # [0],
+    # [9, 9]
 ]
 
 for i, j in zip(a, b):

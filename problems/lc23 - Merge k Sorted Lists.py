@@ -18,116 +18,90 @@ class ListNode:
         self.next = None
 
 
+def array_to_list(arr):
+    if not arr:
+        return None
+    
+    head = ListNode(arr[0])
+    current = head
+    for i in range(1, len(arr)):
+        current.next = ListNode(arr[i])
+        current = current.next
+    
+    return head
+
+
+def list_to_array(head):
+    result = []
+    current = head
+    while current:
+        result.append(current.val)
+        current = current.next
+    return result
+
+
 def mergeKLists(lists: [ListNode]) -> ListNode:
     """
-    So we're given a list of nodes, each node being the head of a singly-linked list
-    Approach: Suppose we are given
+    So we're given a list of nodes, each node being the head of a singly-linked list. merge them all into one linked list
+    [
         1->4->5,
         1->3->4,
         2->6
-        The head nodes are currently 1, 1, and 2.
-        What if we construct the new singly linked list by selecting the minimum node each time?
-        (if two nodes are equal, like the first 1 and second 1, it doesn't matter)
-        This means we need to be able to find the minimum value of all the head nodes at all times
-        and we need to be able to do this efficiently as well...
+    ]
+    =>  1->1->2->3->4->4->5->6
+    how do we do this? pointer at the head of each list -> iterate while each pointer is not None -> select minimum pointer
+    -> insert into result list. in this case the pointers can be considered as each index of the list of ListNodes
     """
+    def merge(a: ListNode, b: ListNode):
+        # first lets write something to merge two sorted lists
+        # then we can apply divide and conquer -> merge lists in pairs from the bottom up until we have a single merged list
+        # how do we merge two linked lists? keep two pointers at the list, add to a new list depending on which value is lower
+        # this approach is O(n log k), where n is total number of elements per list, and k is number of lists
+        # because we are dividing k lists in half (log_2 k recursion depth)
+        # 
+        # what about 
 
-    if not lists: return None
-
-    temphead = ListNode(-1)
-    prev = temphead
-    minNode = None
-    idxToPop = -1
-    while lists:
-        # this for loop finds the minimum head node in the current list
-        # meaning that it's O(k), where k is the number of lists
-        for i in range(len(lists)):
-            if not lists[i]: continue
-            if not minNode: minNode = lists[i]
-            if lists[i].val <= minNode.val:
-                minNode = lists[i]
-                idxToPop = i
-
-        # additionally, since we must go through every element of the k lists, we have O(kn),
-        # where n is num of total elements.
-        # overall time complexity of O(kn), space complexity is O(1)
-
-        prev.next = minNode
-        prev = minNode
-        minNode = None
-
-        if idxToPop == -1: return None # this should have changed
-
-        if not lists[idxToPop].next:
-            lists.remove(lists[idxToPop])
-        else:
-            lists[idxToPop] = lists[idxToPop].next
-
-    return temphead.next
-
-
-def nlogkMergeKLists(lists: [ListNode]) -> ListNode:
-    """
-    We can also approach this similar to merge sort! Pair up lists into 2's when possible and merge them into
-    a larger sorted linked list. Repeat this process until we have a final list.
-    """
-
-    if not lists: return None
-
-    while len(lists) > 1:
-        for i in range(len(lists) // 2):
-            left = lists.pop(i)
-            if len(lists) > 1:
-                right = lists.pop(i + 1)
+        left, right = a, b
+        newHead = ListNode(0)
+        current = newHead
+        while left is not None and right is not None:
+            if left.val <= right.val:
+                current.next = left
+                left = left.next
             else:
-                right = lists.pop(i)
-            lists.append(mergePair(left, right))
-            # IMPORTANT: newly appended items go to the end of the list!
-            # ie: they won't be accessed during this for loop
-    return lists[0]
+                current.next = right
+                right = right.next
+            current = current.next
+        
+        # one of the lists has been exhausted, simply connect the remaining node to the new list
+        if left is not None:
+            current.next = left
+        if right is not None:
+            current.next = right
 
+        return newHead.next
 
-def mergePair(head1, head2):
-    temphead = ListNode(-1)
-    curr = temphead
-    while head1 and head2:
-        if head1.val <= head2.val:
-            curr.next = head1
-            curr = head1
-            head1 = head1.next
+    def recursiveMerge(lists):
+        # if length of lists greater than 2, divide it in two and recursively merge
+        if not lists:
+            return None
+        if len(lists) == 1:
+            return lists[0]
+        elif len(lists) == 2:
+            return merge(*lists)
         else:
-            curr.next = head2
-            curr = head2
-            head2 = head2.next
+            return merge(recursiveMerge(lists[:len(lists) // 2]), recursiveMerge(lists[len(lists) // 2:]))
 
-    while head1:
-        curr.next = head1
-        curr = head1
-        head1 = head1.next
+    return recursiveMerge(lists)
 
-    while head2:
-        curr.next = head2
-        curr = head2
-        head2 = head2.next
+arrays = [
+    [1,4,5],
+    [1,3,4],
+    [2,6]
+]
 
-    return temphead.next
-
-a = ListNode(1)
-a.next = ListNode(4)
-a.next.next = ListNode(5)
-b = ListNode(1)
-b.next = ListNode(3)
-b.next.next = ListNode(4)
-c = ListNode(2)
-c.next = ListNode(6)
-heads = [a,b,c]
-k = mergeKLists(heads)
-
-while k:
-    print(k.val)
-    k = k.next
-
-
-
+heads = [array_to_list(x) for x in arrays]
+merged = mergeKLists(heads)
+print(list_to_array(merged))
 
 
