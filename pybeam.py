@@ -1,14 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
 """
 This is a cookiecutter example of a simple example beam job.
 
