@@ -291,5 +291,67 @@ roi = (
 )
 roi.show()
 
+# how to make and apply a udf
+from pyspark.sql.functions import udf
+from pyspark.sql.types import FloatType
+def roi_to_str(s):
+    return str(s)
+
+to_str_udf = udf(roi_to_str, FloatType())
+df_w_str_roi = roi.withColumn("roi_str", to_str_udf(roi["roi"]))
 
 
+
+
+"""
+-- do total watch time
+with views as (
+    select content_id, sum(watch_duration_minutes) as total_viewed_minutes
+    from user_views
+    where view_date between current_date() - interval 30 days and current_date()
+    group by content_id
+) -- sum of all watched minutes in last 30 days by content_id
+
+select v.content_id, title, total_viewed_minutes
+from views v
+join content c
+on v.content_id = c.content_id
+where content_type = 'movie'
+order by total_viewed_minutes desc
+limit 5
+"""
+
+"""
+schema for a rating system
+
+rating table
+rating_id (for uniqueness in case of same user_id, content_id, timestamp of a rating)
+user_id str
+content_id str
+rating int (1 to 5)
+timestamp (of the rating event, if a user has multiple for the same content_id we take most recent)
+
+content table
+content_id str
+title str
+content_type str
+
+
+query for avg rating of each movie using only most recent rating per content
+
+with ordered_ratings as (
+    select content_id, user_id, rating, row_number() over (partition by content_id, user_id order by timestamp desc) as rn
+    from rating
+),
+recent_ratings as (
+    select *
+    from ordered_ratings
+    where rn = 1
+)
+select content_id, title, avg(rating) as avg_rating
+from recent_ratings r
+join content c
+on r.content_id = c.content_id
+where content_type = 'movie'
+group by content_id, title
+"""
